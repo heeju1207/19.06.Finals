@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>봄,여름,꽃,이야기.</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	<meta property="og:title" content="봄,여름,꽃,이야기." />
+	<meta property="og:description" content="5~7월 사이에서 피어나는
+	꽃들의 설화를 모아보았습니다." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="페이지 주소" />
+	<meta property="og:image" content="thumbnail.png" />
+
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+</head>
+
+<style type="text/css">
+	
+		#back1{ background: url('./img/back1.jpg'); background-size:100% auto; height:647px;}
+		#back2{ background: url('./img/back2.jpg'); background-size:100% auto; height:812px;}
+		#back3{ background: url('./img/back3.jpg'); background-size:100% auto; height:1420px;}
+		#back4{ background: url('./img/back4.jpg'); background-size:100% auto; height:1297px;}
+		#back5{ background: url('./img/back5.jpg'); background-size:100% auto; height:1983px;}
+		#back6{ background: url('./img/back6.jpg'); background-size:100% auto; height:1688px;}
+		#back7{ background: url('./img/back7.jpg'); background-size:100% auto; height:2379px;}
+		#back8{ background: url('./img/back8.jpg'); background-size:100% auto; height:174px;}
+
+		body{background-image:url('space.jpg');   margin:auto;}
+
+		.back{background: url(back.png); background-size: cover;}
+
+		.wrap{width:1000px; margin:auto; position: relative}
+
+		.r1{left: 320px; position: absolute; animation: ro1 50s infinite;}
+  			@keyframes ro1{
+  			from{top:-45px;}
+  			to{top:-45px;transform:rotate(-360deg)}}
+
+		.r2{left: 0px; position: absolute; animation: ro2 20s infinite;z-index: 2;}
+		@keyframes ro2{
+		from{top:850px;}
+		to{top:850px; transform:rotate(-360deg)}}
+
+		.r3{position: absolute; overflow: hidden; animation: ro3 100s infinite;}
+  			@keyframes ro3{
+  			from{top:1870px;}
+  			to{top:1870px;transform:rotate(-360deg)}}
+
+		.m1{top: 70px; position: absolute; animation: lo1 2s infinite alternate;}
+			@keyframes lo1{
+			from{left: 470px;}
+			to{left: 420px;}}
+
+		.m2{top: -30px; position: absolute; animation: lo2 3s infinite alternate;}
+			@keyframes lo2{
+			from{left: 5px;}
+			to{left: 50px;}}
+
+		.m3{left: 680px; position: absolute; animation: lo3 2.5s infinite alternate;z-index: 2;}
+			@keyframes lo3{
+			from{top: 120px;}
+			to{top: 160px;}}
+
+		.m4{top: 650px; position: absolute; animation: lo4 2.5s infinite alternate;z-index: 2;}
+			@keyframes lo4{
+			from{left: -35px;}
+			to{left: 0px;}}
+
+		.m5{top: 1290px; position: absolute; animation: lo5 15s infinite alternate;z-index: 2;}
+			@keyframes lo5{
+			from{left: 700px;}
+			to{left: 230px;}}
+
+
+		.t1{left: 450px; position: absolute; animation: t1 4s infinite;  z-index: 2;}
+  			@keyframes t1{
+  			from{top:410px;transform:rotateY(-20deg); transform-origin: 50% 60% 0;}
+  			to{top:410px;transform:rotateY(20deg); transform-origin: 50% 60% 0;}}
+
+		.t2{left: 670px; position: absolute; animation: t2 3s infinite;  z-index: 1;}
+  			@keyframes t2{
+  			from{top:-125px;transform:rotateY(-20deg); transform-origin: 50% 70% 0;}
+  			to{top:-125px;transform:rotateY(25deg); transform-origin: 50% 70% 0;}}
+
+		.t3{left: -5px; position: absolute; animation: t3 2.5s infinite;  z-index: 1;}
+  			@keyframes t3{
+  			from{top:260px;transform:rotateY(-15deg); transform-origin: 50% 10% 0;}
+  			to{top:260px;transform:rotateY(15deg); transform-origin: 50% 10% 0;}}	
+
+		.t4{left: 605px; position: absolute; animation: t4 2.5s infinite;  z-index: 1;}
+  			@keyframes t4{
+  			from{top:1040px;transform:rotateY(-20deg); transform-origin: 50% 30% 0;}
+  			to{top:1040px;transform:rotateY(20deg); transform-origin: 50% 30% 0;}}
+
+		.t5{left: -17px; position: absolute; animation: t5 4s infinite;  z-index: 1;}
+  			@keyframes t5{
+  			from{top:-505px;transform:rotateY(-25deg); transform-origin: 50% 10% 0;}
+  			to{top:-505px;transform:rotateY(25deg); transform-origin: 50% 10% 0;}}
+
+		.t6{left: 642px; position: absolute; animation: t6 3s infinite;  z-index: 1;}
+  			@keyframes t6{
+  			from{top:-43px;transform:rotateY(-25deg); transform-origin: 50% 10% 0;}
+  			to{top:-43px;transform:rotateY(25deg); transform-origin: 50% 10% 0;}}
+
+		.t7{left: 753px; position: absolute; animation: t7 3.5s infinite;  z-index: 3;}
+  			@keyframes t7{
+  			from{top:330px;transform:rotateY(-30deg); transform-origin: 50% 50% 0;}
+  			to{top:330px;transform:rotateY(30deg); transform-origin: 50% 50% 0;}}
+
+		.t8{left: 0px; position: absolute; animation: t8 2s infinite;  z-index: 1;}
+  			@keyframes t8{
+  			from{top:920px;transform:rotateY(-12deg); transform-origin: 50% 10% 0;}
+  			to{top:920px;transform:rotateY(12deg); transform-origin: 50% 10% 0;}}
+
+		.t9{left: -25px; position: absolute; animation: t9 4s infinite;  z-index: 1;}
+  			@keyframes t9{
+  			from{top:115px;transform:rotateY(-30deg); transform-origin: 50% 50% 0;}
+  			to{top:115px;transform:rotateY(30deg); transform-origin: 50% 50% 0;}}
+
+		.t10{left: 565px; position: absolute; animation: t10 4s infinite;  z-index: 2;}
+  			@keyframes t10{
+  			from{top:155px;transform:rotateY(-25deg); transform-origin: 50% 80% 0;}
+  			to{top:155px;transform:rotateY(25deg); transform-origin: 50% 80% 0;}}
+
+		.t11{left: 0px; position: absolute; animation: t11 3.5s infinite;  z-index: 2;}
+  			@keyframes t11{
+  			from{top:-200px;transform:rotateY(-30deg); transform-origin: 50% 10% 0;}
+  			to{top:-200px;transform:rotateY(30deg); transform-origin: 50% 10% 0;}}
+
+		.t12{left: 505px; position: absolute; animation: t12 4s infinite;  z-index: 1;}
+  			@keyframes t12{
+  			from{top:-245px;transform:rotateY(-20deg); transform-origin: 50% 80% 0;}
+  			to{top:-245px;transform:rotateY(20deg); transform-origin: 50% 80% 0;}}
+
+		.t13{left: 365px; position: absolute; animation: t13 3s infinite;  z-index: 1;}
+  			@keyframes t13{
+  			from{top:490px;transform:rotateY(-10deg); transform-origin: 50% 30% 0;}
+  			to{top:490px;transform:rotateY(10deg); transform-origin: 50% 30% 0;}}
+
+		.t14{left: -4px; position: absolute; animation: t14 3s infinite;  z-index: 1;}
+  			@keyframes t14{
+  			from{top:850px;transform:rotateY(-15deg); transform-origin: 50% 30% 0;}
+  			to{top:850px;transform:rotateY(15deg); transform-origin: 50% 30% 0;}}
+
+		.t15{left: -8px; position: absolute; animation: t15 3s infinite;  z-index: 1;}
+  			@keyframes t15{
+  			from{top:-5px;transform:rotateY(-15deg); transform-origin: 50% 30% 0;}
+  			to{top:-5px;transform:rotateY(15deg); transform-origin: 50% 30% 0;}}
+
+		.t16{left: 10px; position: absolute; animation: t16 5s infinite;  z-index: 2;}
+  			@keyframes t16{
+  			from{top:543px;transform:rotateY(-30deg); transform-origin: 50% 20% 0;}
+  			to{top:543px;transform:rotateY(30deg); transform-origin: 50% 20% 0;}}
+
+
+
+
+		.im02{position: absolute;  z-index: 1; top: 148px; left: 763px;}
+		.im04{position: absolute;  z-index: 2; top: 400px; left: 775px;}
+		.im13{position: absolute;  z-index: 2; top: 415px; left: 0px;}
+		.im17{position: absolute;  z-index: 1; top: 515px; left: 0px;}	
+		.im19{position: absolute;  z-index: 2; top: 1535px; left: 718px;}		
+		.im27{position: absolute;  z-index: 1; top: 1085px; left: 0px;}
+		.immf{position: absolute;  z-index: 2; top: 1710px; left: 135px;}
+		.a1{position: absolute;  z-index: 2; top: 125px; left: 418px;}
+		.a2{position: absolute;  z-index: 2; top: 201px; left: 92px;}
+		.a3{position: absolute;  z-index: 2; top: 250px; left: 500px;}
+		.a4{position: absolute;  z-index: 2; top: 48px; left: 93px;}
+		.a5{position: absolute;  z-index: 3; top: 403px; left: 486px;}
+		.a52{position: absolute;  z-index: 3; top: 985px; left: 486px;}
+		.a6{position: absolute;  z-index: 3; top: 184px; left: 93px;}
+		.a7{position: absolute;  z-index: 3; top: 58px; left: 478px;}
+		.a8{position: absolute;  z-index: 3; top: 1365px; left: 478px;}
+		footer .wrap .line{position: absolute;  z-index: 3; left: 88px;}
+
+
+
+		header h1{font-family: 'Noto Serif KR', serif; font-weight: bold; font-size: 57px; line-height: 1.75; color: white; position: absolute;  z-index: 2; top: 68px; left: 419px;}
+		header h3{font-family: 'Noto Serif KR', serif; font-size: 16px; line-height: 1.8; color: white; position: absolute;  z-index: 2; top: 505px; left: 425px;}
+		#contents1 h2{font-family: 'Noto Serif KR', serif; font-size: 28px; line-height: 1.8; color: white; position: absolute;  z-index: 2; top: 170px; left: 94.5px;}
+		#contents1 p{font-family: 'Noto Serif KR', serif; font-weight:medium; font-size: 21px; line-height: 1.85; letter-spacing: 0.59px; color: white; position: absolute;  z-index: 2; top: 228px; left: 94px;}
+		#contents2 h2{font-family: 'Noto Serif KR', serif; font-size: 28px; line-height: 1.8; color: white; position: absolute;  z-index: 2; top: 218px; left: 804px;}
+		#contents2 p{font-family: 'Noto Serif KR', serif; font-weight:medium; font-size: 21px; line-height: 1.85; letter-spacing: 0.59px; color: white; position: absolute;  z-index: 2; top: 275px; left: 504px; text-align: right;}
+		#contents3 h2{font-family: 'Noto Serif KR', serif; font-size: 28px; line-height: 1.8; color: white; position: absolute;  z-index: 2; top: 17px; left: 99px;}
+		#contents3 p{font-family: 'Noto Serif KR', serif; font-weight:medium; font-size: 21px; line-height: 1.85; letter-spacing: 0.59px; color: white; position: absolute;  z-index: 2; top: 77px; left: 98px;}
+		#contents4 h2{font-family: 'Noto Serif KR', serif; font-size: 28px; line-height: 1.8; color: white; position: absolute;  z-index: 3; top: 377px; left: 833px;}
+		#contents4 p{font-family: 'Noto Serif KR', serif; font-weight:medium; font-size: 21px; line-height: 1.85; letter-spacing: 0.59px; color: white; position: absolute;  z-index: 3; top: 429.5px; left: 483px; text-align: right;}
+		#contents5 h2{font-family: 'Noto Serif KR', serif; font-size: 28px; line-height: 1.8; color: white; position: absolute;  z-index: 3; top: 153px; left: 96px;}
+		#contents5 p{font-family: 'Noto Serif KR', serif; font-weight:medium; font-size: 21px; line-height: 1.85; letter-spacing: 0.59px; color: white; position: absolute;  z-index: 3; top: 211.5px; left: 96px;}
+		#contents6 h2{font-family: 'Noto Serif KR', serif; font-size: 28px; line-height: 1.8; color: white; position: absolute;  z-index: 3; top: 27px; left: 798px;}
+		#contents6 p{font-family: 'Noto Serif KR', serif; font-weight:medium; font-size: 21px; line-height: 1.85; letter-spacing: 0.59px; color: white; position: absolute;  z-index: 3; top: 86.5px; left: 480px; text-align: right;}
+
+
+
+
+
+
+</style>
+
+<body>
+
+	
+
+<div class="back wrap">
+	<header>
+		
+		<div class="wrap" id="back1">
+			<img src="a01.png" class="a1">
+			<h1>봄,<br>여름,<br>꽃,<br>이야기.</h1>
+			<h3>5~7월 사이에서 피어나는<br>꽃들의 설화를 모아보았습니다.</h3>
+		</div>
+
+	</header>
+
+	<section id="contents1">
+
+		<div class="wrap" id="back2">
+			<img src="a02.png" class="a2">
+			<h2>모란</h2>
+			<p>삼국유사에 보면 우리나라에 모란이 들어온<br>것은 신라 진평왕 때 당 태종이 홍자백의<br>모란 그림 한 폭과 그 씨를 보내 왔었다고<br>한다. 이때 아직 공주로 있던 선덕여왕이 그<br>그림을 보고 "꽃은 아름다우나 벌과 나비가<br>없으니 필경 향기가 없겠구나" 하고 말했다.<br>그런데 씨를 심어 꽃이 피니 과연 향기가<br>없었으므로 공주의 명민한 선견을<br>칭찬했다고 한다.</p>
+
+			<img src="01.png" class="m1">
+			<img src="02.png" class="im02">
+			<img src="03.png" class="t1">
+			<img src="04.png" class="im04">
+		</div>
+		
+	</section>
+
+	<section id="contents2">
+		
+		<div class="wrap" id="back3">
+			<img src="a03.png" class="a3">
+			<h2>은방울꽃</h2>
+			<p>옛날 용감하고 악을 미워하며 선을 위해서는<br>조금도 두려워하지 않는 레오날드라는<br>청년이 있었다. 하루는 사냥을 갔다가 항상<br>마을 사람을 괴롭히며 해치던 큰 독사를<br>우연히 만나게 되었다.<br>그 청년은 자기를 향해 달려오는 독사를 보는<br>순간 이 독사를 없애버려 마을 사람들의<br>불안을 덜어주어야 되겠다는 생각에 그<br>독사에게 덤벼들었다. 이 격투는 힘이 서로<br>비슷하여 사흘 밤낮을 싸운 끝에 드디어<br>레오날드가 이겼다. 그러나 심한 상처를 입고<br>쓰러질 듯이 걸어가는 그의 발자취엔 붉은<br>핏방울이 방울방울 떨어졌다. 그 떨어진<br>핏자국마다 예쁜 꽃이 바로<br> 은방울꽃이었다는 이야기다.<br><br>또 다른 이야기로는 요정들이 밤 축제를 하고<br>난 후 풀줄기에 컵을 걸어놓고 갔는데 그게<br>꽃이 되었다는 이야기도 있다.</p>
+
+			<img src="05.png" class="t2">
+			<img src="06.png" class="m2">
+			<img src="07.png" class="t3">
+			<img src="08.png" class="t4">
+		</div>
+
+	</section>
+
+	<section id="contents3">
+
+		<div class="wrap" id="back4">
+			<img src="a04.png" class="a4">
+			<h2>장미</h2>
+			<p>에덴동산에서 아담과 이브가 쫓겨난<br>세상에서 꽃이 없었다.<br>
+			그곳에 지라라는 아름다운 유대 처녀가<br>있었는데 하무엔이라는 불량청년은 이<br>처녀를 사랑했다.그러나 그녀에게서 사랑을<br>거절당한 하무엔은 지라가 마녀라고 뜬<br>소문을 퍼뜨렸다.<br>
+			그 당시의 규율은 마녀를 화형에 처하던<br>때이므로 지라도 장작더미 위에 있는<br>화형대에 묶였다.막 불꽃에 말려들 때 신이<br>지라의 죄 없음을 불쌍히 여겨 불을 끄고<br>그녀를 살리니 화형대의 기둥에서 불붙던<br>쪽은 장미가 피고 불붙지 않은 쪽에는 흰<br>장미꽃이 피어났다. 이것이 인간세계의 맨<br>처음 꽃이라고 한다.<br><br>
+
+			두 번째 이야기는 영원한 아름다움과<br>신비의 상징인 사랑과 미의 여신<br>아프로디테는 자기도 다른 신들과<br>마찬가지로 아름다운 것을 창조할 수<br>있다고 말하고, 대지에 장미꽃을 피웠다.<br>하지만 다른 전설로는 거품 속에서<br>아프로디테가 태어날 때 그와 함께<br>장미꽃이 만들어졌다고도 한다.</p>
+
+			<img src="09.png" class="t5">
+			<img src="10.png" class="t6">
+			<img src="11.png" class="t7">
+			<img src="12.png" class="m3">
+			<img src="13.png" class="im13">
+			<img src="14.png" class="t8">
+		</div>
+		
+	</section>
+
+	<section id="contents4">
+
+		<div class="wrap" id="back5">
+			<img src="a05.png" class="a5">
+			<img src="a052.png" class="a52">
+			<h2>백일홍</h2>
+			<p>바닷가 근처의 어촌 마을에서 거대한 이무기가<br>나타나 수많은 사람들을 죽이는 악행을<br>저질렀다. 그러자 사람들은 이무기를 달래기<br>위해 처녀를 이무기의 제물로 바쳤지만<br>이무기의 극성은 날로 심해졌다.<br>그러던 어느 날, 마을에 젊은 떠돌이 무사가<br>이무기에 대한 얘기를 듣고 마을 사람들을 돕기<br>위해 이무기를 처치하겠다고 공언했으며<br>이번에 제물로 뽑힌 처녀와 사랑에 빠졌다.<br>무사는 마을 사람들에게 자신이 이무기를<br>처치하는데 성공하면 하얀 기를 올리고 자신이<br>이무기에게 죽게 되면 붉은 기를 올리겠다고<br>얘기한 뒤 이무기를 잡으러 배를 타고 떠났다.<br><br>
+			그 뒤 처녀는 무사가 돌아오는 배를<br>바라보았는데 붉은 기가 걸려 있는 것을 보고는<br>상심해서 바다에 몸을 던졌다. 사실 무사는<br>이무기를 퇴치한 다음 흰 기를 걸었는데,<br>이무기의 목을 벨 때 피가 흰 기에 튀면서 붉게<br>물든 것이었다. 나중에 돌아온 무사는 마을<br>사람들이 전해 준 비보를 듣고 자신의 실수에<br>대해 후회한 다음 바닷속으로 몸을 던져 처녀의<br>뒤를 따랐다. 사람들은 이들의 안타까운 죽음에<br>두 사람의 시신을 건져 언덕의 양지바른 곳에<br>묻어주었으며 시간이 흘러 봄이 되자 두 연인이<br>잠든 무덤가에 작고 예쁜 붉은 꽃 한송이가<br>백일동안 피어 있었다. 촌장은 이 꽃을 보고 두<br>연인의 사랑이 꽃으로 다시 태어나<br>100일 간 그들의 사랑을 밝혀주고 있다면서<br>그 꽃을 백일홍이라 불렀다.</p>
+
+
+			<img src="15.png" class="t9">
+			<img src="16.png" class="t10">
+			<img src="17.png" class="im17">
+			<img src="18.png" class="m4">
+			<img src="19.png" class="im19">
+
+		</div>
+		
+	</section>
+
+	<section id="contents5">
+
+		<div class="wrap" id="back6">
+			<img src="a06.png" class="a6">
+			<h2>물망초</h2>
+			<p>옛날에 서로 사랑하던 루돌프라는 청년과<br>펠타라는 아름다운 소녀는 결혼을 앞두고<br>손에 손을 잡고 즐거운 내일을 이야기하며<br>맑은 강가를 산책했다. 해가 서쪽으로 기울<br>무렵 그들은 강가에 앉아 이야기의 꽃을<br>피우고 있었다. 이때 강둑에 핀 하늘빛 작은<br>꽃이 노을을 받아 곱게 비치는 것을<br>무심결에 본 펠타는 그 꽃을 가르키면서<br>"어쩌면 저렇게 고울까요. 나도 저 꽃처럼<br>언제까지나 아름답고 또 사랑받고<br>있었으면..." 하고 말했다. 루돌프는<br>"언제까지나 이제 그 말을 잊지 않는 증거로<br>저 꽃을 따오겠습니다." 하고 물가로<br>내려갔다. 꽃 한가지를 꺾는 순간 청년은<br>발이 미끄러져 그 강의 거센 물결 속에 풍덩<br>빠져 휩쓸리고 말았다. 당황해 하는 펠타의<br> 부르짖음에 루돌프는 있는 힘을 다해 손에<br>쥐었던 물망초를 언덕 위로 내던지며<br>"언제까지나 잊지 말아줘요."하고 소리치며<br>물살에 말려 사라지고 말았다.<br>후세 사람들이 이 꽃을 물망초라 부르게<br>되었다고 한다.</p>
+
+			<img src="20.png" class="t11">
+			<img src="21.png" class="t12">
+			<img src="22.png" class="t13">
+			<img src="23.png" class="t14">
+			<img src="boat.png" class="m5">
+
+
+		</div>
+		
+	</section>
+
+	<section id="contents6">
+		
+		<div class="wrap" id="back7">
+			<img src="a07.png" class="a7">
+			<img src="a08.png" class="a8">
+			<h2>달맞이꽃</h2>
+			<p>태양신을 숭배하는 마을에 로즈라는 처녀가<br>있었다. 마을 사람들은 태양신을 숭배하는만큼<br>낮에 주로 활동했는데,유독 로즈만은 낮보다<br>밤을 더 좋아했다. 매년 여름이면 결혼 축제가<br>열렸는데, 이 축제에서 처녀를 고르는 순서는<br>규율로 정해져있었다. 그리고 청혼을 받은<br>처녀는 절대 거절을 하면 안되는 엄격한 규율이<br>있었다. 마침내 축제 날이 되었다. 로즈는<br>추장의 작은 아들이 자신을 선택해주기를<br>간절히 바라고 있었다. 그들은 1년 전부터<br>사겼던 사이였다. 그러나 그는 로즈가 아닌<br>다른 처녀를 선택해버렸고, 덕분에 로즈는 다른<br>남자의 청혼을 받고 말았다. 화가 난 로즈는<br>청혼을 건넨 남자의 손을 뿌리치고 나가버렸다.<br>
+			축제는 발칵 뒤집어졌고, 로즈는 그녀를<br>따라나온 병사들에게 잡혀 규율에 따라 귀신의<br>골짜기라는 곳으로 즉시 추방되었다. 추방된<br>로즈는 그곳에서 달을 추장의 작은 아들로<br>동일시 여기며 매일 밤마다 달을 사모하기<br>시작했다. 축제가 있고 1년이 흘렀다. 추장의<br>작은 아들은 보는 눈을 피해 몰래 귀신의<br>골짜기를 찾았다. 그는 로즈에게 구하러왔다며<br>큰 소리로 그녀를 불렀지만 돌아오는 것은<br>자신의 메아리뿐이었다. 그 곳에는 추장의 작은<br>아들말고는 아무도 없었다. 단지, 달빛을 따라<br>피어난 한 송이 꽃만이 있을뿐이었다.<br>
+			로즈는 죽어서 꽃이 되어 사랑했던 사람을<br>기다리듯이 밤이면 언제나 달을 보고 피어났던<br>것이었는데 이 꽃이 바로 달맞이꽃이다. 그리고<br>로즈가 추장의 아들과 사귀고 2년만에 죽은<br>것이 달맞이꽃이 두해살이풀인 이유라고 한다.
+			<br><br><br>
+
+			두 번째 이야기로는 옛날에 별을 사랑하는<br>요정들 중에 홀로 달을 사랑하는 님프가 살고<br>있었다. 그런데 이 님프는 별이 뜨면 달을 볼 수<br>없다고 생각했기 때문에 무심코 이런 말을 하게<br>되었다. 별이 모두 없어졌으면…, 그럼 매일<br>매일 달을 볼 수 있을 텐데…." 그러자 이 말을<br>들은 다른 님프들이 제우스에게 곧바로 달려가<br>이 사실을 고했다. 화가 난 제우스는 달이<br>비치지 않는 곳으로 그 님프를 쫓아버리고<br>말았다. 뒤늦게 그 사실을 알게 된 달의 신은<br>자기를 좋아했던 님프를 찾아 헤맸다. 그러나<br>곳곳에서 제우스가 방해를 하는 통에 둘은 끝내<br>만날 수 없었다. 결국 그 님프는 너무나 지친<br>나머지 병들어 죽게 됐고, 님프가 죽은 후에야<br>찾아 올 수 있었던 달의 신은 눈물을 흘리며<br>님프를 땅에 묻어줬다. 이를 본 제우스는 죽은<br>그녀의 영혼을 달맞이꽃으로 환생시켜주었다.<br>그리고 지금까지도 달맞이꽃은 달을 따라 꽃을<br>밤에만 피우고 있다. 그래서인지 그리운 달을<br>기다리는 달맞이꽃은 기다림, 밤의 요정,<br>소원이라는 꽃말을 가지고 있다.</p>
+
+
+			<img src="24.png" class="r1">
+			<img src="25.png" class="t15">
+			<img src="26.png" class="t16">
+			<img src="27.png" class="im27">
+			<img src="sun.png" class="r2">
+			<img src="moon.png" class="r3">
+			<img src="moomf.png" class="immf">
+		</div>
+
+	</section>
+
+	<footer>
+
+		<div class="wrap">
+			<img src="line.png" class="line">
+
+			<div style="font-family: 'Noto Serif KR', serif; font-size: 16px; line-height: 1.8; font-weight: bold; display: block; position: absolute; text-align: left; padding-left: 90px; flex: 0 0 33%;">
+				<p>봄, 여름, 꽃, 이야기.</p>
+
+			</div>
+			<div style="font-family: 'Noto Serif KR', serif; font-size: 16px; line-height: 1.8; font-weight: bold; display: block; position: absolute; text-align: center; padding-left: 390px; flex: 0 0 33%;">
+				<p>5~7월 사이에서 피어나는<br>꽃들의 설화를 모아보았습니다.</p>
+			</div>
+			<div style="font-family: 'Noto Serif KR', serif; font-size: 16px; line-height: 1.8; font-weight: bold; display: block; position: absolute; text-align: right; padding-left: 740px; flex: 0 0 33%;">
+				<p>권희주<br>heeju1207@naver.com</p>
+			</div>
+
+
+
+					
+
+					
+		</div>
+		
+	</footer>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
